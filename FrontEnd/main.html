@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Group 12 - Main page</title>
+        <link rel="stylesheet" href="src/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Spectral:ital,wght@1,200&display=swap" rel="stylesheet">
+        <script type="text/javascript" async="" src="src/function.js" ></script>
+    </head>
+    <body>
+        <div id="background">
+            <div class="left">
+
+                <div id="personalinfo">
+                    <table>
+                        <tr>
+                            <td class="portrait"><img src="src/portrait1.jpg"></td>
+                            <td class="name">Steve Jobs</td>
+                            <td class="operation">
+                                <button id="AddFriend" onclick="AddFriend()">Add Friend</button>
+                                <button id="Logout">Logout</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <table class="contact" id="contact">
+                    <tr>
+                        <td class="portrait"><img src="src/portrait1.jpg"></td>
+                        <td class="name">Michael Jordan</td>
+                        <td class="status">online</td>
+                    </tr>
+                    <tr>
+                        <td class="portrait"><img src="src/portrait2.jpg"></td>
+                        <td class="name">Jackie Chen</td>
+                        <td class="status">online</td>
+                    </tr>
+                    <tr>
+                        <td class="portrait"><img src="src/portrait3.jpg"></td>
+                        <td class="name">Peter Parker</td>
+                        <td class="status">offline</td>
+                    </tr>
+                    <tr>
+                        <td class="portrait"><img src="src/portrait4.jpg"></td>
+                        <td class="name">Tony Stark</td>
+                        <td class="status">online</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="main">
+                <div id="ChatHistory">
+                    <div class="received">
+                        <div class="portrait"><img src="src/portrait4.jpg"></div>
+                        <div class="content">This is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I mean</div>
+                    </div>
+                    <div class="received">
+                        <div class="portrait"><img src="src/portrait4.jpg"></div>
+                        <div class="content">This is What I mean</div>
+                    </div>
+                    <div class="sent">
+                        <div class="content">BulaBula,BulaBula,BulaBula,BulaBula,BulaBula,BulaBula,BulaBula,BulaBula,</div>
+                        <div class="portrait"><img src="src/portrait2.jpg"></div>
+                    </div>
+                    <div class="received">
+                        <div class="portrait"><img src="src/portrait4.jpg"></div>
+                        <div class="content">This is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I mean</div>
+                    </div>
+                    <div class="received">
+                        <div class="portrait"><img src="src/portrait4.jpg"></div>
+                        <div class="content">This is What I mean</div>
+                    </div>
+                    <div class="sent">
+                        <div class="content">BulaBula,BulaBula,BulaBula,BulaBula,BulaBula,BulaBula,BulaBula,BulaBula,</div>
+                        <div class="portrait"><img src="src/portrait2.jpg"></div>
+                    </div>
+                    <div class="received">
+                        <div class="portrait"><img src="src/portrait4.jpg"></div>
+                        <div class="content">This is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I meanThis is What I mean</div>
+                    </div>
+                    <div class="received">
+                        <div class="portrait"><img src="src/portrait4.jpg"></div>
+                        <div class="content">This is What I mean</div>
+                    </div>
+                    <div class="sent">
+                        <div class="content"><img src="src/portrait4.jpg"></div>
+                        <div class="portrait"><img src="src/portrait2.jpg"></div>
+                    </div>
+                    <div class="sent">
+                        <div class="content"><img src="src/portrait4.jpg"></div>
+                        <div class="portrait"><img src="src/portrait2.jpg"></div>
+                    </div>
+                </div>
+                <div id="ChatBox">
+                    <textarea id="InputContent"  rows="6"   style="OVERFLOW: auto"></textarea>
+                    <button id="SendMsg" onclick="Send()">Send</button>
+                </div>
+            </div>
+            <div id="AddFriend-box">
+                    <button onclick="CloseWindow()">X</button>
+                    <div id="pagetype">Find a friend</div>
+                    <div class="info">
+                        <div class="lable"><img src="src/icon-username.png">Friend's username</div>
+                        <input type="text" id="username" >
+                        <button>Search</button>
+                    </div>
+                    <table>
+                        <tr>
+                            <td class="portrait"><img src="src/portrait1.jpg"></td>
+                            <td class="name">Michael Jordan1</td>
+                            <td class="operation"><button>+</button></td>
+                        </tr>
+                        
+                    </table>
+                
+            </div>
+        </div>
+    </body>

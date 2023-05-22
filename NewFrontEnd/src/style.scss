@@ -1,0 +1,297 @@
+.formContainer{
+    background-color:cadetblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+
+    .formWrapper{
+        background-color: white;
+        padding: 20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .logo{
+            font-size: 2em;
+            color: cadetblue;
+        }
+        .title{
+            font-size: 0.7em;
+            color: #888;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input{
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid #333;
+                width: 250px;
+                &::placeholder{
+                    color: #ccc;
+                }
+            }
+            button{
+                padding: 10px;
+                background-color: cadetblue;
+                border-radius: 5px;
+                border: none;
+                color: white;
+                cursor: pointer;
+            }
+            label{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 10px 20px;
+                cursor: pointer;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+                p{
+                    margin-left: 20px;
+                    color: #888;
+                }
+            }
+        }
+        p{
+            font-size: 0.8em;
+            color: #888;
+        }
+    }
+}
+
+.home{
+    background-color:cadetblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+
+    .contrainer{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 10px;
+        width: 70%;
+        height: 75%;
+        overflow: hidden;
+
+        .sidebar{
+            width: 35%;
+            background-color: bisque;
+            overflow: hidden;
+
+            .navbar{
+                display: flex;
+                height: 50px;
+                align-items: center;
+                padding: 0 10px;
+                background-color:darkslategrey;
+                .user{
+                    display: flex;
+                    justify-content: space-between;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        margin-right: 15px;
+                    }
+                    .name{
+                        font-size: 1.3em;
+                        margin-right: 20px;
+                        color: white;
+                    }
+                    button{
+                        border: none;
+                        border-radius: 5px;
+                        color: white;
+                        background-color:chocolate;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+            .search{
+                border-bottom: 2px solid gray;
+                .searchForm{
+                    padding: 10px;
+
+                    input{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 1px solid #777;
+                        height: 30px;
+                        background-color: transparent;
+                        outline: none;
+                        &::placeholder{
+                            color: #777;
+                        }
+                    }
+                }
+                
+            }
+            .userChat{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px;
+                cursor: pointer;
+                &:hover{
+                    background-color:rgb(215, 125, 60);
+                    .userChatInfo{
+                        span{
+                            color: white;
+                        }
+                    }
+                    p{
+                        color: white;
+                    }
+                    
+                }
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+                .userChatInfo{
+                    span{
+                        color: #333;
+                    }
+                }
+                p{
+                    width: 180px;
+                    color: #777;
+                    font-size: 0.8em;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+        .chat{
+            width: 65%;
+            background-color: #ddd;
+            .title{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                padding: 0 10px;
+                font-size: 1.5em;
+                background-color:burlywood;
+            }
+            .messages{
+                padding: 10px;
+                height: calc(100% - 140px);
+                overflow: scroll;
+
+                .message{
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    .messageInfo{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                        }
+                        span{
+                            color: #888;
+                            font-size: 0.6em;
+                        }
+                    }
+                    .messageContent{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        max-width: 70%;
+                
+                        p{
+                            max-width: max-content;
+                            
+                            padding: 6px;
+                            font-size: 1em;
+                            background-color: antiquewhite;
+                            border-radius: 0 10px 10px 10px;
+                        }
+                        img{
+                            width: 60%;
+                            border-radius: 10px;
+                        }
+                    }
+                    &.self{
+                        flex-direction: row-reverse;
+
+                        .messageContent{
+                            
+                            
+                            align-items: flex-end;
+                            p{
+                                background-color:rgb(129, 170, 172);
+                                border-radius: 10px 0 10px 10px;
+                            }
+                        }
+                    }
+                }
+                
+                
+            }
+            .input{
+                height: 50px;
+                background-color: white;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                input{
+                    width: 75%;
+                    border: none;
+                    height: 30px;
+                    background-color: transparent;
+                    outline: none;
+                    &::placeholder{
+                        color: #777;
+                    }
+                }
+                .send{
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    label{
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            cursor: pointer;
+                        }
+
+                    }
+                    
+                    button{
+                        width: 50px;
+                        height: 30px;
+                        border: none;
+                        border-radius: 5px;
+                        color: white;
+                        background-color: darkslategrey;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

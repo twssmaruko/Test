@@ -1,0 +1,282 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color:#0c8389
+    
+}
+#background{
+    background-image: url(background.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-size: 100% 100%;
+    margin: 0;
+}
+
+/* login and registration pages */
+#float{
+    border-radius: 20px;
+    width: 68%;
+    height: 80%;
+    margin: 20% 15%;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px grey;
+    padding: 2%;
+    position: relative;
+}
+#pagetype{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    color: black;
+}
+.info{
+    width: 100%;
+    margin: 2% auto;
+}
+.info .lable{
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+.info .lable img{
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+}
+.info input[type=text], input[type=password]{
+    width: 95%;
+    margin: 2% auto;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid darkgray;
+}
+#submit{
+
+    /* margin: 20% auto; */
+
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    background-color: #0c8389;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2em;
+    color: white;
+}
+
+/* main page */
+.left{
+    width: 25%;
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    float: left;
+    max-height: 90%;
+    overflow: auto;
+}
+#personalinfo{
+    width: 100%;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 15px;
+}
+#personalinfo table tr .portrait{
+    width: 60px;
+    margin: 0;
+}
+#personalinfo table tr .portrait img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+#personalinfo table tr .name{
+    font-size: 2.3em;
+    padding: 0 20px;
+}
+#personalinfo table tr .operation button{
+    height: 40px;
+    border-radius: 5px;
+    background-color: #0c8389;
+    color: white;
+}
+.contact{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+
+}
+.contact tr{
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+.contact .portrait{
+    width: 60px;
+    margin: 0;
+}
+.contact .portrait img{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+.contact .name{
+    font-size: 1.8em;
+    padding: 0 20px;
+}
+
+.main{
+    float: right;
+    width: 68%;
+    background-color: white;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    border-radius: 15px;
+    max-height: 90%;
+    height: 90%;
+    overflow: auto;
+}
+.main #ChatHistory{
+    width: 90%;
+    height: 60%;
+    overflow: auto;
+    border: 1px solid gray;
+    margin: 2% auto;
+    border-radius: 15px;
+    font-size: 1.4em;
+    padding: 3%;
+}
+.main #ChatHistory div .portrait img{
+    width: 40px;
+    height: 40px;
+    float: left;
+    display: flex;
+}
+.main #ChatHistory .received{
+    width: 100%;
+    float: left;
+    height: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+.main #ChatHistory .received .content{
+    width: 50%;
+    height: auto;
+    border: 1px solid #0c8389;
+    border-radius: 15px;
+    padding: 2%;
+    margin-left:10px;
+}
+
+.main #ChatHistory .sent{
+    width: 60%;
+    float: right;
+    height: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+.main #ChatHistory .sent .content{
+    width: 87%;
+    height: auto;
+    border: 1px solid #0c8389;
+    border-radius: 15px;
+    padding: 2%;
+    margin-right:10px;
+    float: right;
+    word-break:break-all;
+    background: #0c8389;
+    color: white;
+
+}
+.main #ChatBox{
+    width: 96%;
+    margin: 0 auto;
+}
+.main #ChatBox textarea{
+    width: 85%;
+    border-radius: 15px;
+    padding: 1%;
+    font-size: 1.5em;
+}
+.main #ChatBox button{
+    float: right;
+    width: 12%;
+    height: 160px;
+    border-radius: 15px;
+    background-color: #0c8389;
+    color: white;
+    font-size: large;
+}
+#AddFriend-box{
+    position: relative;
+    display: none;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 40%;
+    margin: 3% 30%;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px grey;
+    padding: 2%;
+    border: 3px solid #0c8389;
+}
+#AddFriend-box button{
+    float: right;
+}
+#AddFriend-box .info button{
+    float: right;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #0c8389;
+    color: white;
+    font-size: large;
+    margin-right: 5%;
+}
+#AddFriend-box table{
+    position: relative;
+    width: 90%;
+    height: 500px;
+    overflow: auto;
+    margin: 0 5%;
+}
+
+#AddFriend-box table tr{
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+#AddFriend-box table .portrait{
+    width: 60px;
+    margin: 0;
+}
+#AddFriend-box table .portrait img{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+#AddFriend-box table .name{
+    font-size: 1.8em;
+    padding: 0 20px;
+}
+
+
+/* for labtop and bigger screen */
+@media screen and (min-width: 800px) {
+    #float{
+        width: 28%;
+        height: 70%;
+        margin: 7% 35%;
+    }
+    /*
+    #submit{
+        margin: 10% auto;
+    }
+    */
+  }
